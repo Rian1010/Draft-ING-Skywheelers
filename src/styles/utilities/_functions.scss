@@ -1,0 +1,7 @@
+@use "sass:math";
+@use "variables.scss" as var;
+
+@function pxToRem($pxValue) {
+  // $default-size comes from the variables
+  @return math.div($pxValue, var.$default-font-size) * 1rem;
+}

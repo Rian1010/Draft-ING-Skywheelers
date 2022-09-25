@@ -1,0 +1,41 @@
+@use "variables" as font;
+@use "mixins";
+@use "../utilities/variables" as utilVar;
+@use "../utilities/functions" as utilFun;
+
+html {
+  font-size: utilVar.$default-font-size;
+}
+
+body {
+  font-family: font.$text-family;
+  color: utilVar.$text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @include mixins.large-text-styles();
+}
+
+h1,
+.h1 {
+  font-size: utilFun.pxToRem(96px);
+}
+
+h2,
+.h2 {
+  font-size: utilFun.pxToRem(88px);
+}
+
+h3,
+.h3 {
+  font-size: utilFun.pxToRem(72px);
+}
+
+h4,
+.h4 {
+  font-size: utilFun.pxToRem(56px);
+}

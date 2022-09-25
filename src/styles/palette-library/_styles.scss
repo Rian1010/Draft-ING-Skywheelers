@@ -1,0 +1,12 @@
+@use "../utilities/functions" as util;
+
+body {
+  & > section > h1 {
+    max-width: 1200px;
+    margin: auto;
+    padding: {
+      top: util.pxToRem(50px);
+      bottom: util.pxToRem(50px);
+    }
+  }
+}

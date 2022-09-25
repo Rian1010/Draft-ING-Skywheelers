@@ -1,0 +1,12 @@
+@use "../utilities/functions" as utilFun;
+@use "variables" as var;
+
+@mixin large-text-styles($color: #f48720) {
+  color: $color;
+  padding: {
+    top: utilFun.pxToRem(7px);
+    bottom: utilFun.pxToRem(7px);
+  }
+  font-family: var.$heading-family;
+  font-weight: 300;
+}

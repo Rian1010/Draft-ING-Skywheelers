@@ -1,0 +1,12 @@
+@use "../utilities/functions" as f;
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: {
+    top: f.pxToRem(50px);
+    bottom: f.pxToRem(50px);
+    right: f.pxToRem(30px);
+    left: f.pxToRem(30px);
+  }
+}
