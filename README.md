@@ -1,5 +1,6 @@
 # ING Skywheelers Draft
 
 ## Installing SASS
-- sass main.scss style.css
-- sass --watch main.scss:syles.css
+
+- sass src/styles/main.scss src/styles/style.css
+- sass --watch src/styles/main.scss:src/styles/styles.css
