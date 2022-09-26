@@ -50,13 +50,14 @@
 }
 .main-nav img {
   width: 131px;
+  margin-right: 73px;
 }
 .main-nav ul {
   width: 100%;
   display: flex;
   justify-content: center;
   list-style: none;
-  gap: 10px;
+  gap: 20px;
 }
 .main-nav ul a {
   text-decoration: none;
@@ -67,6 +68,7 @@
   color: #f48720;
 }
 .main-nav form {
+  width: 400px;
   display: flex;
   justify-content: flex-end;
   gap: 15px;
@@ -83,6 +85,9 @@
 }
 .main-nav form #searchQuery:focus {
   outline: none;
+}
+.main-nav form #searchBtn {
+  cursor: pointer;
 }
 
 body > section > h1 {
