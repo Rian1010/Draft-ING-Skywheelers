@@ -34,12 +34,17 @@
   }
   form {
     display: flex;
+    justify-content: flex-end;
     gap: 15px;
-    input {
+    #searchQuery {
       color: #fff;
       background-color: rgba(0, 0, 0, 0.5);
+      font-size: utilFun.pxToRem(25px);
       border: none;
       border-bottom: 3px solid #fff;
+      opacity: 0;
+      width: 0;
+      transition: 0.5s linear;
       &:focus {
         outline: none;
       }

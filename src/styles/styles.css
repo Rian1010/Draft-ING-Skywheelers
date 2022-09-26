@@ -68,15 +68,20 @@
 }
 .main-nav form {
   display: flex;
+  justify-content: flex-end;
   gap: 15px;
 }
-.main-nav form input {
+.main-nav form #searchQuery {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.3888888889rem;
   border: none;
   border-bottom: 3px solid #fff;
+  opacity: 0;
+  width: 0;
+  transition: 0.5s linear;
 }
-.main-nav form input:focus {
+.main-nav form #searchQuery:focus {
   outline: none;
 }
 
