@@ -1,6 +1,6 @@
 const bannerText = document.getElementById("bannerText");
 
-var words = ["bereit!", "ein Team-Player!", "ein Skywheeler!"];
+var words = ["ehrgeizig!", "kämpferisch!", "ein Skywheeler!"];
 
 function increment(i) {
     return i++;

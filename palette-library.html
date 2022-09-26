@@ -4,55 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="src/styles/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <section class="main-banner">
-      <div>
-        <video
-          src="src/videos/video-sample-1240x720.mp4"
-          type="video/mp4"
-          autoplay
-          muted
-          loop
-        ></video>
-        <div>
-          <h1>Palette Library</h1>
-          <p>Sei <span id="bannerText"></span></p>
+    <header>
+      <nav class="main-nav">
+        <div class="container">
+          <img
+            src="src/images/INGSkywheelersLogo.png"
+            alt="ING Skywheelers Logo"
+          />
+          <ul>
+            <li>
+              <a href="#">Über Uns</a>
+            </li>
+            <li>
+              <a href="#">News</a>
+            </li>
+            <li>
+              <a href="#">Gallerie</a>
+            </li>
+            <li>
+              <a href="#">Events</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+          <form action="">
+            <!-- To be improved with JavaScript -->
+            <input type="text" id="searchQuery" />
+            <!-- To be changed as a button -->
+            <i class="fa fa-search" style="color: #fff" id="searchBtn"></i>
+          </form>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <h2>Typography</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
-          dolorum porro, recusandae eligendi laboriosam eveniet eos. Suscipit
-          tempore, minima corrupti nemo eius eaque illum. Officia nihil,
-          aliquid, nam deserunt suscipit esse veritatis reprehenderit voluptate
-          dicta sapiente cupiditate ea alias nisi adipisci, reiciendis sint id
-          quo unde expedita quisquam fuga ad tempora. Impedit a voluptate
-          ducimus, dolorem error, aperiam sunt labore distinctio tenetur alias
-          corporis consequatur quas debitis maxime culpa architecto laudantium,
-          aliquid cumque. Sint, aperiam. Dignissimos veniam recusandae ad, eaque
-          eos adipisci necessitatibus dolores modi aliquam omnis quibusdam,
-          soluta at repudiandae porro culpa amet error explicabo tenetur. Quis,
-          necessitatibus perspiciatis.
-        </p>
-      </div>
-    </section>
-    <hr />
-    <section>
-      <div class="container">
-        <h2>Headings</h2>
-        <h1 class="h1">h1 Heading</h1>
-        <h2 class="h2">h2 Heading</h2>
-        <h3 class="h3">h3 Heading</h3>
-        <h4 class="h4">h4 Heading</h4>
-      </div>
-    </section>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-banner">
+        <div>
+          <video
+            src="src/videos/video-sample-1240x720.mp4"
+            type="video/mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+          <div>
+            <h1>Palette Library</h1>
+            <p>Sei <span id="bannerText"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Typography</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+            dolorum porro, recusandae eligendi laboriosam eveniet eos. Suscipit
+            tempore, minima corrupti nemo eius eaque illum. Officia nihil,
+            aliquid, nam deserunt suscipit esse veritatis reprehenderit
+            voluptate dicta sapiente cupiditate ea alias nisi adipisci,
+            reiciendis sint id quo unde expedita quisquam fuga ad tempora.
+            Impedit a voluptate ducimus, dolorem error, aperiam sunt labore
+            distinctio tenetur alias corporis consequatur quas debitis maxime
+            culpa architecto laudantium, aliquid cumque. Sint, aperiam.
+            Dignissimos veniam recusandae ad, eaque eos adipisci necessitatibus
+            dolores modi aliquam omnis quibusdam, soluta at repudiandae porro
+            culpa amet error explicabo tenetur. Quis, necessitatibus
+            perspiciatis.
+          </p>
+          <h1 class="h1">h1 Heading</h1>
+          <h2 class="h2">h2 Heading</h2>
+          <h3 class="h3">h3 Heading</h3>
+          <h4 class="h4">h4 Heading</h4>
+        </div>
+      </section>
+
+      <hr />
+
+      <section>
+        <div class="container">
+          <h2>Content</h2>
+        </div>
+      </section>
+    </main>
 
     <script src="src/js/main-banner.js"></script>
+    <script src="src/js/navbar.js"></script>
   </body>
 </html>

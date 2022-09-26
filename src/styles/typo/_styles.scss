@@ -41,5 +41,7 @@ h4,
 }
 
 p {
+  max-width: 70ch;
+  line-height: 150%;
   font-size: utilFun.pxToRem(25px);
 }

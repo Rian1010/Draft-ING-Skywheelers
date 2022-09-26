@@ -26,7 +26,8 @@
       }
 
       p {
-        font-size: 63px;
+        line-height: unset;
+        font-size: utilFun.pxToRem(63px);
       }
     }
   }
