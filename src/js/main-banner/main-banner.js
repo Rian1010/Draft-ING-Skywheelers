@@ -1,18 +1,14 @@
 const bannerText = document.getElementById("bannerText");
 
-var words = ["ehrgeizig!", "kämpferisch!", "ein Skywheeler!"];
-
-function increment(i) {
-    return i++;
-}
-
-function generateText() {
+export const generateText = () => {
+    let words = ["ehrgeizig!", "kämpferisch!", "ein Skywheeler!"];
     let i = 0;
     let j = 0;
+
     let loop = () => {
         if (i < words.length) {
-            let innerLoop = setInterval(function () {
-                if (j < words[i].length) {
+            let innerLoop = setInterval(() => {
+                if (j < words[i].length && words[i].length !== undefined) {
                     if (j === 0) bannerText.innerHTML = '';
                     bannerText.innerHTML += words[i][j];
                     j++;
@@ -26,9 +22,5 @@ function generateText() {
             clearInterval(loop);
         }
     }
-    // loop();
     setInterval(loop, 1000);
-
-};
-
-generateText();
+}

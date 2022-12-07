@@ -20,11 +20,9 @@
       justify-content: center;
       flex-direction: column;
       // padding-left: utilFun.pxToRem(365px);
-
       h1 {
         margin-bottom: 0;
       }
-
       p {
         line-height: unset;
         font-size: utilFun.pxToRem(63px);

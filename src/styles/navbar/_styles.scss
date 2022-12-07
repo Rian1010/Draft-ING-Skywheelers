@@ -1,58 +1,106 @@
 @use "../utilities/functions" as utilFun;
 
-.main-nav {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  position: absolute;
-  z-index: 1;
-  padding: {
-    top: utilFun.pxToRem(10px);
-    bottom: 0;
+header {
+  position: relative;
+  #circularCursor {
+    background: {
+      color: rgb(255, 255, 255);
+    }
+    border: {
+      width: 1px;
+      style: solid;
+      color: #ffffff;
+      radius: 50%;
+    }
+    height: 0;
+    width: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    mix-blend-mode: difference;
   }
-  div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  img {
-    width: 131px;
-    margin-right: 73px;
-  }
-  ul {
+  .main-nav {
+    cursor: none;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 20px;
-    a {
-      text-decoration: none;
-      color: #fff;
-      transition: color 0.2s;
-      &:hover {
-        color: #f48720;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    z-index: 1;
+    padding: {
+      top: utilFun.pxToRem(10px);
+      bottom: 0;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > a:first-child {
+        margin-right: 73px;
+        img {
+          width: 131px;
+        }
       }
     }
-  }
-  form {
-    width: 400px;
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px;
-    #searchQuery {
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.5);
-      font-size: utilFun.pxToRem(25px);
-      border: none;
-      border-bottom: 3px solid #fff;
-      opacity: 0;
-      width: 0;
-      transition: 0.5s linear;
-      &:focus {
-        outline: none;
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 20px;
+      a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.2s;
+        cursor: none;
+        &:hover {
+          color: #f48720;
+        }
+        padding: {
+          right: 10px;
+          left: 10px;
+        }
       }
     }
-    #searchBtn {
-      cursor: pointer;
+    form {
+      width: 400px;
+      display: flex;
+      justify: {
+        content: flex-end;
+      }
+      gap: 15px;
+      #searchQuery {
+        color: #fff;
+        background: {
+          color: rgba(0, 0, 0, 0.5);
+        }
+        font: {
+          size: utilFun.pxToRem(25px);
+        }
+        border: {
+          top: none;
+          bottom: 3px solid #fff;
+          right: none;
+          left: none;
+        }
+        opacity: 0;
+        width: 0;
+        transition: 0.5s linear;
+        &:focus {
+          outline: none;
+        }
+      }
+      #searchBtn {
+        padding: {
+          right: 10px;
+          left: 10px;
+        }
+        color: #ffffff;
+        &:hover {
+          color: #f48720;
+        }
+        // cursor: pointer;
+      }
     }
   }
 }

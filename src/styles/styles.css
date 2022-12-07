@@ -35,7 +35,25 @@
   font-size: 3.5rem;
 }
 
-.main-nav {
+header {
+  position: relative;
+}
+header #circularCursor {
+  background-color: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 50%;
+  height: 0;
+  width: 0;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  mix-blend-mode: difference;
+}
+header .main-nav {
+  cursor: none;
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
@@ -43,51 +61,63 @@
   padding-top: 0.5555555556rem;
   padding-bottom: 0;
 }
-.main-nav div {
+header .main-nav div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main-nav img {
-  width: 131px;
+header .main-nav div > a:first-child {
   margin-right: 73px;
 }
-.main-nav ul {
+header .main-nav div > a:first-child img {
+  width: 131px;
+}
+header .main-nav ul {
   width: 100%;
   display: flex;
   justify-content: center;
   list-style: none;
   gap: 20px;
 }
-.main-nav ul a {
+header .main-nav ul a {
   text-decoration: none;
   color: #fff;
   transition: color 0.2s;
+  cursor: none;
+  padding-right: 10px;
+  padding-left: 10px;
 }
-.main-nav ul a:hover {
+header .main-nav ul a:hover {
   color: #f48720;
 }
-.main-nav form {
+header .main-nav form {
   width: 400px;
   display: flex;
   justify-content: flex-end;
   gap: 15px;
 }
-.main-nav form #searchQuery {
+header .main-nav form #searchQuery {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 1.3888888889rem;
-  border: none;
+  border-top: none;
   border-bottom: 3px solid #fff;
+  border-right: none;
+  border-left: none;
   opacity: 0;
   width: 0;
   transition: 0.5s linear;
 }
-.main-nav form #searchQuery:focus {
+header .main-nav form #searchQuery:focus {
   outline: none;
 }
-.main-nav form #searchBtn {
-  cursor: pointer;
+header .main-nav form #searchBtn {
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #ffffff;
+}
+header .main-nav form #searchBtn:hover {
+  color: #f48720;
 }
 
 body > section > h1 {
